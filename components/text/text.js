@@ -4,8 +4,9 @@ class Text extends DIVComponentBase{
         this._setupDefaultValues();
         this._draw();
         this.workMode = workMode;
-        if (workMode !== 2 && workMode !== 0) {
-            this._getWSData();
-        }
+    }
+
+    _draw() {
+        super._draw();
     }
 }
